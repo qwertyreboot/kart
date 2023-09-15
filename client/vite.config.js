@@ -2,6 +2,8 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import { VitePWA } from "vite-plugin-pwa";
 
+console.log(process?.env?.SERVER_URL);
+
 export default defineConfig({
   envDir: ".",
   plugins: [
